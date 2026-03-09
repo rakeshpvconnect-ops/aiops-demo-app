@@ -2,7 +2,7 @@ from flask import Flask, jsonify
 import os, time, random
  
 app = Flask(__name__)
-APP_VERSION = os.getenv('APP_VERSION', '1.0.0')
+APP_VERSION = os.getenv('APP_VERSION', '2.0.0')
 CONFIG_PATH = os.getenv('CONFIG_PATH', '/etc/app/config.yaml')
  
 @app.route('/health')
